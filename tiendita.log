@@ -1,0 +1,14 @@
+INFO:     Started server process [830787]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3012 (Press CTRL+C to quit)
+INFO:     148.206.51.18:44252 - "GET /docs HTTP/1.1" 200 OK
+INFO:     148.206.51.18:44252 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     148.206.51.18:44252 - "GET /tiendita/productos HTTP/1.1" 200 OK
+INFO:     148.206.51.18:45071 - "POST /tiendita/productos HTTP/1.1" 200 OK
+INFO:     148.206.51.18:40088 - "GET /tiendita/productos HTTP/1.1" 200 OK
+INFO:     148.206.51.18:42574 - "GET /tiendita/productos/0 HTTP/1.1" 200 OK
+INFO:     148.206.51.18:51362 - "PUT /tiendita/productos/0 HTTP/1.1" 200 OK
+INFO:     148.206.51.18:43375 - "GET /tiendita/productos HTTP/1.1" 200 OK
+INFO:     148.206.51.18:47025 - "DELETE /tiendita/productos/0 HTTP/1.1" 200 OK
+INFO:     148.206.51.18:45566 - "GET /tiendita/productos HTTP/1.1" 200 OK

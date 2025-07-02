@@ -1,14 +1,14 @@
-from models.productos_model import Producto
+from models.productos_model import ProductoEntrada, Productos
 from typing import List, Optional
 
-db_de_productos: List[Productos] = []
-identificador_autom = 1
+productos_db: List[Productos] = []
+contador_id = [0]
 
-def obtener_todos(): -> List[Productos]:
+def obtener_todos() -> List[Productos]:
     """
     Regresa todos los productos en la memoria.
     """
-    return db_de_productos
+    return productos_db
 
 def obtener_por_id(producto_id: int) -> Optional[Productos]:
     """
@@ -19,10 +19,7 @@ def obtener_por_id(producto_id: int) -> Optional[Productos]:
             return producto
     return None
 
-def crear(producto: Producto) -> Productos:
-    """
-    Crea un nuevo producto con un ID generado automáticamente gracias a una lista donde solo interactuamos cin su primer elemento para usarlo como contador.
-    """
+def crear(producto: ProductoEntrada) -> Productos:
     nuevo_producto = Productos(
         id=contador_id[0],
         nombre=producto.nombre,
